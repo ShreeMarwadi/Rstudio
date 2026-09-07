@@ -1,0 +1,41 @@
+## Que 1: Skewness of ages dataset
+data1 <- c(22, 25, 27, 24, 29, 30, 22, 26, 31, 24)
+n1 <- length(data1)
+m2 <- mean((data1 - mean(data1))^2)
+m3 <- mean((data1 - mean(data1))^3)
+skewness1 <- m3 / (m2^(3/2))
+skewness1
+
+## Que 2: Skewness of exam scores dataset
+data2 <- c(50, 60, 55, 70, 65, 80, 85, 60, 55, 45)
+n2 <- length(data2)
+m2 <- mean((data2 - mean(data2))^2)
+m3 <- mean((data2 - mean(data2))^3)
+skewness2 <- m3 / (m2^(3/2))
+skewness2
+
+## Que 3: Skewness of monthly income dataset
+data3 <- c(2, 3, 4, 5, 6, 7, 8, 3, 4, 10)
+n3 <- length(data3)
+m2 <- mean((data3 - mean(data3))^2)
+m3 <- mean((data3 - mean(data3))^3)
+skewness3 <- m3 / (m2^(3/2))
+skewness3
+
+## Que 4: Skewness of frequency distribution (items purchased)
+x4 <- c(1, 2, 3, 4, 5)
+f4 <- c(10, 12, 8, 5, 3)
+N4 <- sum(f4)
+xbar4 <- sum(f4 * x4) / N4
+m2 <- sum(f4 * (x4 - xbar4)^2) / N4
+m3 <- sum(f4 * (x4 - xbar4)^3) / N4
+skewness4 <- m3 / (m2^(3/2))
+skewness4
+
+## Que 5: Skewness of product prices dataset
+data5 <- c(15, 18, 20, 25, 30, 35, 40, 22, 28, 30)
+n5 <- length(data5)
+m2 <- mean((data5 - mean(data5))^2)
+m3 <- mean((data5 - mean(data5))^3)
+skewness5 <- m3 / (m2^(3/2))
+skewness5
