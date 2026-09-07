@@ -1,0 +1,44 @@
+## Que 1: Kurtosis of heights dataset
+data1 <- c(160, 165, 170, 175, 180, 185, 190, 195, 200, 205)
+m2 <- mean((data1 - mean(data1))^2)
+m4 <- mean((data1 - mean(data1))^4)
+kurtosis1 <- m4 / (m2^2)
+kurtosis1
+
+## Que 2: Kurtosis of exam scores dataset
+data2 <- c(45, 55, 60, 65, 70, 75, 80, 85, 90, 95)
+m2 <- mean((data2 - mean(data2))^2)
+m4 <- mean((data2 - mean(data2))^4)
+kurtosis2 <- m4 / (m2^2)
+kurtosis2
+
+## Que 3: Kurtosis of monthly expenses dataset
+data3 <- c(500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400)
+m2 <- mean((data3 - mean(data3))^2)
+m4 <- mean((data3 - mean(data3))^4)
+kurtosis3 <- m4 / (m2^2)
+kurtosis3
+
+## Que 4: Kurtosis of daily temperatures dataset
+data4 <- c(22, 24, 26, 28, 30, 32, 34, 36, 38, 40)
+m2 <- mean((data4 - mean(data4))^2)
+m4 <- mean((data4 - mean(data4))^4)
+kurtosis4 <- m4 / (m2^2)
+kurtosis4
+
+## Que 5: Kurtosis of product ratings dataset
+data5 <- c(1, 2, 2, 3, 3, 3, 4, 4, 5, 5)
+m2 <- mean((data5 - mean(data5))^2)
+m4 <- mean((data5 - mean(data5))^4)
+kurtosis5 <- m4 / (m2^2)
+kurtosis5
+
+## Que 6: Kurtosis of frequency distribution (units sold)
+x6 <- c(10, 20, 30, 40, 50)
+f6 <- c(5, 8, 7, 4, 3)
+N6 <- sum(f6)
+xbar6 <- sum(f6 * x6) / N6
+m2 <- sum(f6 * (x6 - xbar6)^2) / N6
+m4 <- sum(f6 * (x6 - xbar6)^4) / N6
+kurtosis6 <- m4 / (m2^2)
+kurtosis6
