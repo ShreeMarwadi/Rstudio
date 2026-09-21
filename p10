@@ -1,0 +1,39 @@
+Hours_Studied = c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+Test_Score = c(55, 60, 65, 70, 75, 80, 85, 90, 95, 100)
+ 
+# Fit the linear model
+model = lm(Test_Score ~ Hours_Studied)
+summary(model)
+ 
+# Residual plot
+plot(model$fitted.values, model$residuals,
+     main = "Residual Plot", xlab = "Fitted", ylab = "Residuals", pch = 19)
+abline(h = 0, col = "red")
+ 
+# RSS and MRSS (R already stores residuals & degrees of freedom)
+rss = sum(model$residuals^2)
+mrss = rss / model$df.residual
+ 
+print(paste("RSS:", rss))
+print(paste("MRSS:", mrss))
+
+--------------------------------------------------------
+
+Hours_Worked = c(35, 40, 45, 50, 55, 60, 65, 70)
+Salary = c(3000, 3500, 4000, 4500, 5000, 5500, 6000, 6500)
+ 
+# Fit the linear model
+model = lm(Salary ~ Hours_Worked)
+summary(model)
+ 
+# Residual plot
+plot(model$fitted.values, model$residuals,
+     main = "Residual Plot", xlab = "Fitted", ylab = "Residuals", pch = 19)
+abline(h = 0, col = "red")
+ 
+# RSS and MRSS
+rss = sum(model$residuals^2)
+mrss = rss / model$df.residual
+ 
+print(paste("RSS:", rss))
+print(paste("MRSS:", mrss))
